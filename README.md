@@ -91,9 +91,11 @@ This will require a controller, a route, and a view. Don't worry about formattin
 1. Create a form (`form_for`) viewable at `localhost:3000/todos/new` that submits a `POST` request that will create the a `Todo` object in your database. Verify this works by visiting your home page and seeing that the object you created shows up. 
 
 **Hint:** This question will require additional controller methods, views, and routes. 
+
 **Hint:** The field for a boolean check box is `f.checkbox`.
 
 2. You can even have the controller method that creates the `Todo` object redirect to your home page. 
+
 **Hint:** Use `rails routes` to see the name of the home page path. 
 
 3. (Bonus) Add a link to (look up `link_to`) your form from the home page.
