@@ -75,13 +75,25 @@ There isn't anything in the repo for todos! This is a perfect chance to see how 
 ### Q4: MVC
 Combining everything you have learned from lectures up to this point, make a home page that displays all the `Cat`s, `Todo`s, and `User`s in your database. This will require a controller, a route, and a view. Don't worry about formatting, but feel free to make it pretty if you'd like.
 
-Hint: How can we retrieve all the objects in our database? The documentation [here](http://guides.rubyonrails.org/active_record_querying.html) may help.
+Feel free to populate your database by `create`ing some `Cat`s and `User`s. 
+
+Make it so that you should be able to go to your homepage simply by visiting `localhost:3000`.
+
+**Hint:** How can we retrieve all the objects in our database? The documentation [here](http://guides.rubyonrails.org/active_record_querying.html) may help.
+
+**Note/Super Hint:** There is a lot of flexibility in this question but how we implemented it was to have a Pages controller with `home` method that initialized the variables `@cats`, `@users`, `@todos`.
 
 ### Q5: Forms
 
-Create a form (`form_for`) viewable at `localhost:3000/todos/new` that submits a `POST` request that will create the a `Todo` object in your database. Verify this works by visiting your home page and seeing that the object you created shows up. You can even have the controller method that creates the `Todo` object redirect to your home page. 
+Create a form (`form_for`) viewable at `localhost:3000/todos/new` that submits a `POST` request that will create the a `Todo` object in your database. Verify this works by visiting your home page and seeing that the object you created shows up. 
 
 **Hint:** This question will require additional controller methods, views, and routes. 
+**Hint:** The field for a boolean check box is `f.checkbox`.
+
+You can even have the controller method that creates the `Todo` object redirect to your home page. 
+**Hint:** Use `rails routes` to see the name of the home page path. 
+
+Bonus: add a link to (look up `link_to`) your form from the home page.
 
 ### Q6: Final questions
 Answer the questions in `ANSWERS.md`.
