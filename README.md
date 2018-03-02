@@ -59,7 +59,7 @@ $ rails console
 ```
 
 ### Q2: Users
-For the `User` model, you'll see a migration - which was made to create a user with a name and an email - and an associated model in `app/models`. What you need to do is add an integer field called age to our `Users` table. Check out the [Rails documentation](http://guides.rubyonrails.org/active_record_migrations.html#creating-a-migration) for a refresher on how to do this. Run the migration and fire up your Rails console; check to see if your `User` model now has an age as shown below.
+For the `User` model, you'll see a migration - which was made to create a user with a `name` and an `email` - and an associated model in `app/models`. What you need to do is add an integer field called `age` to our `Users` table. Check out the [Rails documentation](http://guides.rubyonrails.org/active_record_migrations.html#creating-a-migration) for a refresher on how to do this. Run the migration and fire up your Rails console; check to see if your `User` model now has an age as shown below.
 
 ```
 $ rails console
