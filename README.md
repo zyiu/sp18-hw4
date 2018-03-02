@@ -70,14 +70,17 @@ $ rails console
 Following, try and see if you can rename the column from `name` to `username`. You'll find how to do so within the above documentation. Do a similar check to see if it worked.
 
 ### Q3: Todos
+
 There isn't anything in the repo for todos! This is a perfect chance to see how easy it is to create a migration and model in seconds with by generating the model and migration in **one command**. Check to see if your changes (namely creating a `Todos` table and `Todo` model) worked in Rails console.
 
 ### Q4: MVC
-Combining everything you have learned from lectures up to this point, make a home page that displays all the `Cat`s, `Todo`s, and `User`s in your database. This will require a controller, a route, and a view. Don't worry about formatting, but feel free to make it pretty if you'd like.
+1. Combining everything you have learned from lectures up to this point, make a home page that displays all the `Cat`s, `Todo`s, and `User`s in your database. 
 
-- Feel free to populate your database by `create`ing some `Cat`s and `User`s. 
+This will require a controller, a route, and a view. Don't worry about formatting, but feel free to make it pretty if you'd like.
 
-- Make it so that you should be able to go to your homepage simply by visiting `localhost:3000`.
+2. Feel free to populate your database by `create`ing some `Cat`s and `User`s. 
+
+3. Make it so that you should be able to go to your homepage simply by visiting `localhost:3000`.
 
 **Hint:** How can we retrieve all the objects in our database? The documentation [here](http://guides.rubyonrails.org/active_record_querying.html) may help.
 
@@ -85,15 +88,15 @@ Combining everything you have learned from lectures up to this point, make a hom
 
 ### Q5: Forms
 
-- Create a form (`form_for`) viewable at `localhost:3000/todos/new` that submits a `POST` request that will create the a `Todo` object in your database. Verify this works by visiting your home page and seeing that the object you created shows up. 
+1. Create a form (`form_for`) viewable at `localhost:3000/todos/new` that submits a `POST` request that will create the a `Todo` object in your database. Verify this works by visiting your home page and seeing that the object you created shows up. 
 
 **Hint:** This question will require additional controller methods, views, and routes. 
 **Hint:** The field for a boolean check box is `f.checkbox`.
 
-- You can even have the controller method that creates the `Todo` object redirect to your home page. 
+2. You can even have the controller method that creates the `Todo` object redirect to your home page. 
 **Hint:** Use `rails routes` to see the name of the home page path. 
 
-Bonus: add a link to (look up `link_to`) your form from the home page.
+3. (Bonus) Add a link to (look up `link_to`) your form from the home page.
 
 ### Q6: Final questions
 Answer the questions in `ANSWERS.md`.
