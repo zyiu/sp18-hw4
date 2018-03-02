@@ -1,36 +1,39 @@
 # Rails Decal Spring 2018 Homework 4
 
 ## Overview 
-Welcome to homework 4 of the Rails DeCal! This homework is due **Mar 8th at 6:30PM**
+Welcome to homework 4 of the Rails DeCal! This homework is due **Mar 8th at 6:30PM**.
 
 We've finally learned about models! At the end of this homework, you will have built an app with the models `Cat`, `Todo`, and `User` with the specifications below (along with their associated tables). As well, you will have created a view to render all the models persisted in your database. Finally, you will have responded to the questions in `ANSWERS.md`.
 
 As always, remember to `bundle install` before getting started.
 
-TL;DR: you will build a basic TODO app, an app pretty common in many Rails tutorials.
+tl;dr: you will build a basic TODO app, an app pretty common in many Rails tutorials.
 
-## Models
+## Application Spec
 
-### Cat
+### Models
+
+#### Cat
 ```
 name: a string that contains the name of a cat
 ```
 
-### Todo
+#### Todo
 ```
 tasks: a string name of a Todo that needs to be done
 finished: a boolean on whether or not a Todo has been finished
 ```
 
-### User
+#### User
 ```
 username: a string that contains the username of a User
 email: a string that contains the email of a User
 age: an integer that contains the age of a User
 ```
 
-### View
-Create a home page that renders all `Cat`s, `Todo`s, and `User`s in your database.
+### Views
+- A home page that renders all `Cat`s, `Todo`s, and `User`s in your database.
+- A form to create new `Todo`s.
 
 ## Preface
 
@@ -42,7 +45,7 @@ rails db:migrate
 ```
 when you want to make changes to your database.
 
-Note that a walkthrough for the homework is included below. For a challenge, try completing the homework without the walkthrough.
+Note that a walkthrough for the homework is included below. For a challenge, try completing the homework without the walkthrough. Essentially, create an application based on the specs we provided above.
 
 ## Walkthrough
 
