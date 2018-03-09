@@ -1,0 +1,10 @@
+<h1>FORM</h1>
+<%= form_for @todo, url: create_todo_path do |f| %>
+  <%= f.label "Task" %>:
+  <%= f.text_field :tasks %><br/>
+
+  <%= f.label "Status" %>:
+  <%= f.check_box :finished %><br/>
+
+  <%= f.submit %>
+<% end %>
